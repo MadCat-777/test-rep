@@ -80,6 +80,7 @@ int main()
    int outp = stoi(inpt);
    
    outp+=8;
+
    
    cout<<outp<<endl;
    
