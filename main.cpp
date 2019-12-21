@@ -6,7 +6,7 @@ using namespace std;
 //==========
 int main()
 {
-   cout<<"Cake is lie"<<endl;
+   cout<<"Cake is TRUTH"<<endl;
    
    bool flag=false;
    int temp=0, num=0;
@@ -79,7 +79,7 @@ int main()
    
    int outp = stoi(inpt);
    
-   outp+=7;
+   outp+=10;
    
    cout<<outp<<endl;
    
