@@ -8,70 +8,78 @@ int main()
 {
    cout<<"Cake is lie"<<endl;
    
-   string inpt;
-   cin>>inpt;
-   
+   bool flag=false;
    int temp=0, num=0;
+   string inpt;
    
-   num=size(inpt);
-   
-   for (int i = 0; i < num; i++)
+   while(!flag)
    {
-      switch (inpt[i])
+      cin>>inpt;
+      
+      num=size(inpt);
+      
+      for (int i = 0; i < num; i++)
       {
-         case '0':
-            temp++;
-         break;
+         switch (inpt[i])
+         {
+            case '0':
+               temp++;
+            break;
 
-         case '1':
-            temp++;
-         break;
+            case '1':
+               temp++;
+            break;
 
-         case '2':
-            temp++;
-         break;
+            case '2':
+               temp++;
+            break;
 
-         case '3':
-            temp++;
-         break;
+            case '3':
+               temp++;
+            break;
 
-         case '4':
-            temp++;
-         break;
+            case '4':
+               temp++;
+            break;
 
-         case '5':
-            temp++;
-         break;
+            case '5':
+               temp++;
+            break;
 
-         case '6':
-            temp++;
-         break;
+            case '6':
+               temp++;
+            break;
 
-         case '7':
-            temp++;
-         break;
+            case '7':
+               temp++;
+            break;
 
-         case '8':
-            temp++;
-         break;
+            case '8':
+               temp++;
+            break;
 
-         case '9':
-            temp++;
-         break;
+            case '9':
+               temp++;
+            break;
 
-         default:
-         break;
+            default:
+            break;
+         }
+      }
+
+      if(temp == num)
+      {
+         flag = true;
+      }
+      else
+      {
+         cout<<"ERROR: Only digits allowed"<<endl;
       }
    }
-
-   if(temp == num)
-   {
-      cout << true << endl;
-   }
-   else
-   {
-      cout << false << endl;
-   }
+   
+   int outp = stoi(inpt);
+   
+   cout<<outp<<endl;
    
    return 0;
 }
