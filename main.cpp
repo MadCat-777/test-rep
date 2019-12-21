@@ -10,6 +10,7 @@ int main()
    
    string inpt;
    cin>>inpt;
+   cout<<inpt<<endl;
    
    return 0;
 }
